@@ -1,0 +1,192 @@
+# In colored strip datasets, each ID is associated to a color box/strip and can have an optional label.
+# Color can be specified in hexadecimal, RGB, or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator.
+
+# Lines starting with a hash are comments and ignored during parsing.
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+# Select the separator which is used to delimit the data below (TAB, SPACE, or COMMA).
+SEPARATOR TAB
+
+# Label is used in the legend table (can be changed later)
+DATASET_LABEL Transposon_Families
+
+# Dataset color (can be changed later)
+COLOR #FF0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+# If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+# When all children of a node have the same color, it will be colored the same, i.e., the color will propagate inwards towards the root.
+COLOR_BRANCHES 1
+
+# Add a legend (optional, but useful for explanation)
+LEGEND_TITLE Transposon Families
+LEGEND_HORIZONTAL 0
+LEGEND_SHAPES 1 2
+LEGEND_COLORS #FF0000 #00FF00
+LEGEND_LABELS Retand Copia
+
+# Width of the colored strip
+STRIP_WIDTH 25
+
+# Left margin (increases/decreases spacing to next dataset)
+MARGIN 5
+
+# Display or hide the individual label inside each colored strip (when defined in the data below)
+SHOW_STRIP_LABELS 1
+
+# Position of the strip label within the box ('top', 'center', or 'bottom')
+STRIP_LABEL_POSITION center
+
+# Strip label size factor (relative to the tree leaf labels)
+STRIP_LABEL_SIZE_FACTOR 1
+
+# Rotate the strip labels (only in rectangular tree display mode)
+STRIP_LABEL_ROTATION 0
+
+# Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages.
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+
+# Contig data with color and label (Retand and Copia)
+contig_1_10252837..10257921 #0000FF Copia
+contig_1_11134124..11139081 #0000FF Copia
+contig_1_12643878..12648600 #0000FF Copia
+contig_1_12833752..12839873 #0000FF Copia
+contig_1_13514466..13519244 #0000FF Copia
+contig_1_4308166..4313077 #0000FF Copia
+contig_1_8475404..8480405 #0000FF Copia
+contig_1_9325336..9330703 #0000FF Copia
+contig_1_9857292..9862177 #0000FF Copia
+contig_100_1027358..1032703 #0000FF Copia
+contig_100_913523..918344 #0000FF Copia
+contig_108_1152928..1158185 #0000FF Copia
+contig_108_585938..591120 #0000FF Copia
+contig_108_675785..681281 #0000FF Copia
+contig_113_2213866..2225157 #0000FF Copia
+contig_113_4110038..4113367 #0000FF Copia
+contig_113_4167319..4172075 #0000FF Copia
+contig_113_604383..609565 #0000FF Copia
+contig_114_1028076..1033323 #0000FF Copia
+contig_114_1208223..1215622 #0000FF Copia
+contig_114_1442202..1447309 #0000FF Copia
+contig_114_1474003..1478575 #0000FF Copia
+contig_114_1549702..1555637 #0000FF Copia
+contig_114_323219..329519 #0000FF Copia
+contig_114_360094..365264 #0000FF Copia
+contig_114_666864..672710 #0000FF Copia
+contig_115_1393374..1398128 #0000FF Copia
+contig_115_1756224..1761242 #0000FF Copia
+contig_115_3184664..3189670 #0000FF Copia
+contig_115_717881..726709 #0000FF Copia
+contig_123_2295167..2299967 #0000FF Copia
+contig_123_2457410..2463053 #0000FF Copia
+contig_123_488852..493941 #0000FF Copia
+contig_123_5744978..5749605 #0000FF Copia
+contig_123_63349..68540 #0000FF Copia
+contig_123_709759..714921 #0000FF Copia
+contig_123_897823..902778 #0000FF Copia
+contig_124_580100..584979 #0000FF Copia
+contig_124_939510..944099 #0000FF Copia
+contig_125_941987..944348 #0000FF Copia
+contig_129_1778415..1783228 #0000FF Copia
+contig_129_1799723..1804861 #0000FF Copia
+contig_129_2192255..2197474 #0000FF Copia
+contig_129_2559203..2562557 #0000FF Copia
+contig_129_3076773..3084217 #0000FF Copia
+contig_136_1143532..1148463 #0000FF Copia
+contig_136_1458021..1462804 #0000FF Copia
+contig_136_873889..880524 #0000FF Copia
+contig_137_18303..24788 #0000FF Copia
+contig_137_235793..240726 #0000FF Copia
+contig_137_432411..436100 #0000FF Copia
+contig_137_480075..485219 #0000FF Copia
+contig_137_565269..571151 #0000FF Copia
+contig_137_623721..632406 #0000FF Copia
+contig_137_680099..688803 #0000FF Copia
+contig_138_104662..109405 #0000FF Copia
+contig_138_1777247..1782386 #0000FF Copia
+contig_138_2072369..2077488 #0000FF Copia
+contig_138_2245455..2254164 #0000FF Copia
+contig_138_2743601..2745031 #0000FF Copia
+contig_138_363737..373738 #0000FF Copia
+contig_138_367431..372854 #0000FF Copia
+contig_138_46357..51463 #0000FF Copia
+contig_138_542588..547967 #0000FF Copia
+contig_138_634929..639895 #0000FF Copia
+contig_138_712387..717187 #0000FF Copia
+contig_138_787305..792577 #0000FF Copia
+contig_139_2048638..2064568 #0000FF Copia
+contig_139_2236878..2242078 #0000FF Copia
+contig_139_568215..573479 #0000FF Copia
+contig_139_693863..698507 #0000FF Copia
+contig_139_949374..954360 #0000FF Copia
+contig_142_2044741..2049848 #0000FF Copia
+contig_142_3068779..3073829 #0000FF Copia
+contig_142_3143127..3148084 #0000FF Copia
+contig_142_3565104..3570216 #0000FF Copia
+contig_142_7435096..7439721 #0000FF Copia
+contig_143_519328..527441 #0000FF Copia
+contig_145_740707..748245 #0000FF Copia
+contig_152_2507377..2512573 #0000FF Copia
+contig_152_2654885..2657277 #0000FF Copia
+contig_152_311673..316659 #0000FF Copia
+contig_152_3248442..3252027 #0000FF Copia
+contig_152_3359120..3364208 #0000FF Copia
+contig_152_3578003..3582937 #0000FF Copia
+contig_152_368768..373799 #0000FF Copia
+contig_152_404398..409429 #0000FF Copia
+contig_152_4321896..4326851 #0000FF Copia
+contig_152_437619..442341 #0000FF Copia
+contig_152_4479443..4484787 #0000FF Copia
+contig_152_4602343..4607633 #0000FF Copia
+contig_152_6055002..6058529 #0000FF Copia
+contig_152_6067557..6072658 #0000FF Copia
+contig_152_6747908..6752891 #0000FF Copia
+contig_152_698577..703359 #0000FF Copia
+contig_154_1122627..1127681 #0000FF Copia
+contig_154_1129443..1134070 #0000FF Copia
+contig_167_1142384..1147471 #0000FF Copia
+contig_167_1270309..1275741 #0000FF Copia
+contig_167_153713..158350 #0000FF Copia
+contig_167_1875425..1880907 #0000FF Copia
+contig_167_2250938..2255761 #0000FF Copia
+contig_167_2923287..2928243 #0000FF Copia
+contig_167_3021408..3026522 #0000FF Copia
+contig_167_5967891..5970129 #0000FF Copia
+contig_167_6546915..6551540 #0000FF Copia
+contig_167_6791332..6796754 #0000FF Copia
+contig_167_7372271..7377201 #0000FF Copia
+contig_167_7825148..7830105 #0000FF Copia
+contig_169_1142150..1146290 #0000FF Copia
+contig_169_12450830..12455752 #0000FF Copia
+contig_169_12587066..12591830 #0000FF Copia
+contig_169_1380988..1386116 #0000FF Copia
+contig_169_1492271..1496928 #0000FF Copia
+contig_169_2062334..2066999 #0000FF Copia
+contig_169_2839583..2841961 #0000FF Copia
+contig_169_324703..327095 #0000FF Copia
+contig_169_368214..373078 #0000FF Copia
+contig_169_4344504..4347859 #0000FF Copia
+contig_169_4350219..4354846 #0000FF Copia
+contig_169_444963..449717 #0000FF Copia
+contig_169_4516802..4521679 #0000FF Copia
+contig_169_4894413..4899657 #0000FF Copia
+contig_169_4988460..4992569 #0000FF Copia
+contig_169_555428..559137 #0000FF Copia
+contig_169_5616512..5621234 #0000FF Copia
+contig_169_774539..779282 #0000FF Copia
+contig_169_9318135..9323014 #0000FF Copia
+contig_2_7635017..7639971 #0000FF Copia
+contig_2_7641708..7646335 #0000FF Copia
+contig_2_8413897..8419130 #0000FF Copia
+contig_2_9779296..9784254 #0000FF Copia
+contig_98_1008246..1013201 #0000FF Copia
+contig_98_393922..398566 #0000FF Copia

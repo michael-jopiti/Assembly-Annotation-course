@@ -1,0 +1,162 @@
+# In colored strip datasets, each ID is associated to a color box/strip and can have an optional label.
+# Color can be specified in hexadecimal, RGB, or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator.
+
+# Lines starting with a hash are comments and ignored during parsing.
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+# Select the separator which is used to delimit the data below (TAB, SPACE, or COMMA).
+SEPARATOR TAB
+
+# Label is used in the legend table (can be changed later)
+DATASET_LABEL Transposon_Families
+
+# Dataset color (can be changed later)
+COLOR #FF0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+# If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+# When all children of a node have the same color, it will be colored the same, i.e., the color will propagate inwards towards the root.
+COLOR_BRANCHES 1
+
+# Add a legend (optional, but useful for explanation)
+LEGEND_TITLE Transposon Families
+LEGEND_HORIZONTAL 0
+LEGEND_SHAPES 1 2
+LEGEND_COLORS #FF0000 #00FF00 #0000FF
+LEGEND_LABELS Retand Gypsy Copia
+
+# Width of the colored strip
+STRIP_WIDTH 25
+
+# Left margin (increases/decreases spacing to next dataset)
+MARGIN 5
+
+# Display or hide the individual label inside each colored strip (when defined in the data below)
+SHOW_STRIP_LABELS 1
+
+# Position of the strip label within the box ('top', 'center', or 'bottom')
+STRIP_LABEL_POSITION center
+
+# Strip label size factor (relative to the tree leaf labels)
+STRIP_LABEL_SIZE_FACTOR 1
+
+# Rotate the strip labels (only in rectangular tree display mode)
+STRIP_LABEL_ROTATION 0
+
+# Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages.
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+
+# Contig data with color and label (Retand, Gypsy, and Copia)
+contig_1_13599571..13603834 #FF0000 Retand
+contig_1_9215522..9227073 #FF0000 Retand
+contig_100_351584..362766 #FF0000 Retand
+contig_100_564903..575720 #FF0000 Retand
+contig_106_43953..56852 #FF0000 Retand
+contig_108_1112067..1121859 #FF0000 Retand
+contig_108_1376775..1379643 #FF0000 Retand
+contig_108_1399084..1407506 #FF0000 Retand
+contig_108_1767613..1778490 #FF0000 Retand
+contig_108_492085..502722 #FF0000 Retand
+contig_108_633843..647188 #FF0000 Retand
+contig_108_744004..751703 #FF0000 Retand
+contig_111_405683..413472 #FF0000 Retand
+contig_111_524045..531926 #FF0000 Retand
+contig_111_537370..548619 #FF0000 Retand
+contig_113_296116..307206 #FF0000 Retand
+contig_113_514829..525733 #FF0000 Retand
+contig_114_443076..448596 #FF0000 Retand
+contig_114_522410..531356 #FF0000 Retand
+contig_115_5231343..5236516 #FF0000 Retand
+contig_123_2009645..2019559 #FF0000 Retand
+contig_123_2654244..2659785 #FF0000 Retand
+contig_124_1469090..1480233 #FF0000 Retand
+contig_124_1546492..1557393 #FF0000 Retand
+contig_124_162110..173599 #FF0000 Retand
+contig_124_1935432..1942434 #FF0000 Retand
+contig_124_286745..293438 #FF0000 Retand
+contig_124_2937737..2948327 #FF0000 Retand
+contig_124_437075..445338 #FF0000 Retand
+contig_124_454048..466880 #FF0000 Retand
+contig_124_52961..60885 #FF0000 Retand
+contig_124_566412..577859 #FF0000 Retand
+contig_124_765421..773066 #FF0000 Retand
+contig_124_814537..827590 #FF0000 Retand
+contig_124_975963..986857 #FF0000 Retand
+contig_135_1416563..1430056 #FF0000 Retand
+contig_135_1783072..1796470 #FF0000 Retand
+contig_135_203132..214071 #FF0000 Retand
+contig_135_2058494..2068949 #FF0000 Retand
+contig_135_2070369..2081023 #FF0000 Retand
+contig_135_234403..239872 #FF0000 Retand
+contig_135_490702..501264 #FF0000 Retand
+contig_135_846332..859130 #FF0000 Retand
+contig_135_889373..901103 #FF0000 Retand
+contig_135_921890..931980 #FF0000 Retand
+contig_136_1214961..1220213 #00FF00 Gypsy
+contig_136_1381794..1388057 #00FF00 Gypsy
+contig_136_1413931..1419147 #00FF00 Gypsy
+contig_136_1622888..1631160 #00FF00 Gypsy
+contig_136_1869257..1882769 #00FF00 Gypsy
+contig_136_1908784..1914864 #00FF00 Gypsy
+contig_136_1959663..1969242 #00FF00 Gypsy
+contig_136_2227522..2236297 #00FF00 Gypsy
+contig_137_1435165..1440377 #00FF00 Gypsy
+contig_137_1573906..1585575 #00FF00 Gypsy
+contig_137_204040..214670 #00FF00 Gypsy
+contig_137_2178689..2189990 #00FF00 Gypsy
+contig_137_2399463..2411405 #00FF00 Gypsy
+contig_137_2679536..2690192 #00FF00 Gypsy
+contig_138_2419714..2429041 #00FF00 Gypsy
+contig_138_6673891..6681500 #00FF00 Gypsy
+contig_139_2049225..2059925 #00FF00 Gypsy
+contig_139_2508351..2519081 #00FF00 Gypsy
+contig_139_2592374..2603078 #00FF00 Gypsy
+contig_139_2650186..2660742 #00FF00 Gypsy
+contig_139_2772975..2783928 #00FF00 Gypsy
+contig_139_2798727..2809557 #00FF00 Gypsy
+contig_139_2844691..2851814 #00FF00 Gypsy
+contig_139_2970958..2976305 #00FF00 Gypsy
+contig_142_7076539..7087414 #00FF00 Gypsy
+contig_143_356413..362215 #00FF00 Gypsy
+contig_143_429202..437994 #00FF00 Gypsy
+contig_143_711483..721682 #00FF00 Gypsy
+contig_145_1193281..1203172 #00FF00 Gypsy
+contig_145_718355..724928 #00FF00 Gypsy
+contig_152_5022026..5032617 #00FF00 Gypsy
+contig_152_5340302..5346524 #00FF00 Gypsy
+contig_152_5582967..5595566 #00FF00 Gypsy
+contig_152_5793468..5803932 #00FF00 Gypsy
+contig_152_6034324..6045154 #00FF00 Gypsy
+contig_152_6155334..6169320 #00FF00 Gypsy
+contig_152_6218199..6224587 #00FF00 Gypsy
+contig_152_6382024..6396010 #00FF00 Gypsy
+contig_152_6496782..6507054 #00FF00 Gypsy
+contig_152_6661860..6672272 #00FF00 Gypsy
+contig_152_6672568..6676993 #00FF00 Gypsy
+contig_152_6687248..6693985 #00FF00 Gypsy
+contig_152_6717543..6726196 #00FF00 Gypsy
+contig_152_6739959..6746281 #00FF00 Gypsy
+contig_152_6873014..6886918 #00FF00 Gypsy
+contig_152_7166130..7180038 #00FF00 Gypsy
+contig_152_822294..827614 #00FF00 Gypsy
+contig_167_1047653..1052562 #00FF00 Gypsy
+contig_167_3792877..3799083 #00FF00 Gypsy
+contig_167_440192..446124 #00FF00 Gypsy
+contig_167_7970562..7973646 #00FF00 Gypsy
+contig_167_937782..944541 #00FF00 Gypsy
+contig_168_2324339..2335989 #00FF00 Gypsy
+contig_169_586007..589151 #00FF00 Gypsy
+contig_2_8838420..8848390 #00FF00 Gypsy
+contig_79_607945..615794 #00FF00 Gypsy
+contig_108_866350..870247 #00FF00 Gypsy
+contig_114_491501..497961 #00FF00 Gypsy
+contig_114_523597..527584 #00FF00 Gypsy

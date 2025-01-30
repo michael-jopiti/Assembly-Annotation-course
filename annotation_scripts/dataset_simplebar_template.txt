@@ -1,0 +1,295 @@
+DATASET_SIMPLEBAR
+#In simple bar charts, each ID is associated to a single numeric value which is displayed as a bar outside the tree.
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,label 1
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+#dataset scale: you can simply set the values where the scale will be drawn
+#DATASET_SCALE,2000,10000,20000
+
+#or you can specify value, label, color, width, style and label size factor for each scale line (dash separated, format: VALUE-LABEL-COLOR-WIDTH-DASHED-LABEL_SCALE_FACTOR))
+#DATASET_SCALE,2000-2k line-#0000ff-5-1-1,10000-line at 10k-#ff0000-1-0-2,20000-3rd line-#00ff00-5-1-1
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE,Dataset legend
+#LEGEND_SCALE,1
+#LEGEND_POSITION_X,100
+#LEGEND_POSITION_Y,100
+#LEGEND_HORIZONTAL,0
+#LEGEND_SHAPES,1,2,3
+#LEGEND_COLORS,#ff0000,#00ff00,#0000ff
+#LEGEND_LABELS,value1,value2,value3
+#LEGEND_SHAPE_SCALES,1,1,0.5
+
+
+#maximum width
+#WIDTH,1000
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN,0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL,0
+
+#show dashed lines between leaf labels and the dataset
+#DASHED_LINES,1
+
+#bar height factor; Default bar height will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+#HEIGHT_FACTOR,1
+
+#Display individual values above the bars
+#SHOW_VALUE,0
+
+#Display custom bar labels, when defined. The label can be specified after the numeric value in the DATA section below.
+#SHOW_LABELS,0
+
+#Position of the value or custom label, relative to the bar (when SHOW_VALUE or SHOW_LABELS are set to 1)
+#can be one of: outside-right, outside-left, left, center, right
+#LABEL_POSITION,outside-right
+
+#shift all labels horizontally and/or vertically
+#LABEL_SHIFT_X,0
+#LABEL_SHIFT_Y,0
+
+#color of the value labels. Ignored if LABEL_AUTO_COLOR is 1
+#BAR_LABEL_COLOR,#0000ff
+
+#if set to 1, calculate the value label color automatically, based on the darkness of the bar. Labels will be white or black.
+#LABEL_AUTO_COLOR,1
+
+#multiply the size of all labels by this factor
+#LABEL_SIZE_FACTOR,1
+
+
+#Bars are aligned to the node lines by default. Using BAR_SHIFT, you can move them all up/down by a fixed amount
+#BAR_SHIFT,0
+
+#BAR_ZERO specifies which dataset value will be used as a starting point for drawing the bars. Dataset values smaller than BAR_ZERO will be displayed to the left (possibly overlapping the tree, unless MARGIN is increased)
+#BAR_ZERO,0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the bars
+#BORDER_WIDTH,0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR,#0000ff
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+#only numeric values are required for each ID, custom labels can be optionally provided as the second field (shown when SHOW_LABELS is set to 1) 
+DATA
+TE_00000023_INT,30
+TE_00000078_INT,93
+TE_00000171_INT,82
+TE_00000175_INT,8
+TE_00000234_INT,67
+TE_00000308_INT,7
+TE_00000309_INT,8
+TE_00000311_INT,73
+TE_00000312_INT,6
+TE_00000314_INT,48
+TE_00000319_INT,2
+TE_00000327_INT,2
+TE_00000336_INT,25
+TE_00000342_INT,13
+TE_00000343_INT,1
+TE_00000352_INT,2
+TE_00000355_INT,14
+TE_00000356_INT,4
+TE_00000358_INT,3
+TE_00000359_INT,9
+TE_00000362_INT,4
+TE_00000363_INT,135
+TE_00000368_INT,7
+TE_00000370_INT,61
+TE_00000372_INT,8
+TE_00000382_INT,4
+TE_00000384_INT,4
+TE_00000385_INT,9
+TE_00000388_INT,24
+TE_00000389_INT,13
+TE_00000390_INT,6
+TE_00000398_INT,29
+TE_00000399_INT,2
+TE_00000403_INT,10
+TE_00000405_INT,4
+TE_00000406_INT,48
+TE_00000411_INT,7
+TE_00000416_INT,4
+TE_00000418_INT,1
+TE_00000424_INT,4
+TE_00000425_INT,2
+TE_00000430_INT,7
+TE_00000438_INT,3
+TE_00000442_INT,9
+TE_00000444_INT,17
+TE_00000447_INT,2
+TE_00000450_INT,3
+TE_00000451_INT,5
+TE_00000452_INT,9
+TE_00000453_INT,83
+TE_00000460_INT,26
+TE_00000461_INT,7
+TE_00000465_INT,26
+TE_00000470_INT,3
+TE_00000476_INT,141
+TE_00000478_INT,41
+TE_00000480_INT,7
+TE_00000481_INT,6
+TE_00000482_INT,4
+TE_00000483_INT,16
+TE_00000490_INT,11
+TE_00000491_INT,4
+TE_00000492_INT,8
+TE_00000493_INT,75
+TE_00000500_INT,10
+TE_00000501_INT,151
+TE_00000504_INT,20
+TE_00000505_INT,1
+TE_00000508_INT,4
+TE_00000510_INT,1548
+TE_00000511_INT,1
+TE_00000512_INT,84
+TE_00000518_INT,6
+TE_00000525_INT,3
+TE_00000527_INT,79
+TE_00000531_INT,19
+TE_00000537_INT,4
+TE_00000538_INT,1
+TE_00000540_INT,8
+TE_00000564_INT,1
+TE_00000567_INT,7
+TE_00000571_INT,5
+TE_00000572_INT,2
+TE_00000574_INT,3
+TE_00000575_INT,1
+TE_00000585_INT,34
+TE_00000587_INT,12
+TE_00000588_INT,14
+TE_00000589_INT,6
+TE_00000593_INT,1
+TE_00000595_INT,240
+TE_00000598_INT,26
+TE_00000599_INT,4
+TE_00000601_INT,51
+TE_00000602_INT,46
+TE_00000603_INT,38
+TE_00000604_INT,10
+TE_00000608_INT,3
+TE_00000609_INT,6
+TE_00000613_INT,2
+TE_00000614_INT,5
+TE_00000618_INT,3
+TE_00000619_INT,1
+TE_00000626_INT,4
+TE_00000627_INT,4
+TE_00000630_INT,2
+TE_00000634_INT,1
+TE_00000651_INT,5
+TE_00000654_INT,11
+TE_00000655_INT,5
+TE_00000662_INT,18
+TE_00000664_INT,39
+TE_00000668_INT,1
+TE_00000669_INT,1
+TE_00000672_INT,33
+TE_00000674_INT,20
+TE_00000676_INT,7
+TE_00000679_INT,3
+TE_00000680_INT,1
+TE_00000681_INT,1
+TE_00000689_INT,19
+TE_00000695_INT,3
+TE_00000700_INT,4
+TE_00000705_INT,52
+TE_00000710_INT,35
+TE_00000713_INT,1
+TE_00000717_INT,59
+TE_00000719_INT,28
+TE_00000721_INT,5
+TE_00000730_INT,19
+TE_00000733_INT,44
+TE_00000735_INT,16
+TE_00000739_INT,2
+TE_00000741_INT,8
+TE_00000742_INT,59
+TE_00000747_INT,7
+TE_00000749_INT,113
+TE_00000750_INT,5
+TE_00000753_INT,10
+TE_00000754_INT,22
+TE_00000756_INT,86
+TE_00000759_INT,24
+TE_00000761_INT,6
+TE_00000766_INT,5
+TE_00000779_INT,2
+TE_00000781_INT,3
+TE_00000782_INT,18
+TE_00000785_INT,5
+TE_00000789_INT,13
+TE_00000794_INT,10
+TE_00000795_INT,6
+TE_00000799_INT,5
+TE_00000803_INT,4
+TE_00000811_INT,6
+TE_00000818_INT,4
+TE_00000824_INT,33
+TE_00000827_INT,6
+TE_00000830_INT,4
+TE_00000831_INT,1
+TE_00000836_INT,51
+TE_00000838_INT,1
+TE_00000840_INT,10
+TE_00000845_INT,3
+TE_00000848_INT,2
+TE_00000852_INT,2
+TE_00000855_INT,11
+TE_00000857_INT,1
+TE_00000860_INT,15
+TE_00000863_INT,2
+TE_00000864_INT,1
+TE_00000866_INT,7
+TE_00000875_INT,2
+TE_00000877_INT,7
+TE_00000880_INT,10
+TE_00000882_INT,76
+TE_00000883_INT,3
+TE_00000889_INT,6
+TE_00000890_INT,5
+TE_00000895_INT,10
+TE_00000898_INT,5
+TE_00000902_INT,2
+
